@@ -16,12 +16,12 @@ public class GuessingGame {
    
     while (guessNumber != numberOfItems) {
       count += 1;
-      System.out.printf("How many %s(s) are in the jar? Pick a number between 1 and %d:  ",
+      System.out.printf("How many %s(s) are in the jar? Pick a number between 1 and %d:  %n",
 			itemName, maxItemsAllowed  );
       guessNumber = scanner.nextInt(); 
     } 
     
-    System.out.printf("You got it in %d attempt(s)! ",
+    System.out.printf("%d attempts! ",
                       count);
       
    
